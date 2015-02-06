@@ -10,6 +10,8 @@ import Foundation
 import Cocoa
 import SpriteKit
 
+let π = CGFloat(M_PI)
+
 extension NSEvent {
 	enum Key : Int {
 		case Up = 126

@@ -16,6 +16,7 @@
 		FF65D6921A84E1CA000E0370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF65D6901A84E1CA000E0370 /* Main.storyboard */; };
 		FF65D69E1A84E1CA000E0370 /* BuddyBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D69D1A84E1CA000E0370 /* BuddyBuilderTests.swift */; };
 		FF65D6A81A84E59D000E0370 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D6A71A84E59D000E0370 /* Extensions.swift */; };
+		FF65D6AA1A84E795000E0370 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D6A91A84E795000E0370 /* Doctor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		FF65D69C1A84E1CA000E0370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF65D69D1A84E1CA000E0370 /* BuddyBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyBuilderTests.swift; sourceTree = "<group>"; };
 		FF65D6A71A84E59D000E0370 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FF65D6A91A84E795000E0370 /* Doctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				FF65D68C1A84E1CA000E0370 /* ViewController.swift */,
 				81858FC91A84E5FE00BA5EEE /* GameScene.swift */,
 				FF65D6A71A84E59D000E0370 /* Extensions.swift */,
+				FF65D6A91A84E795000E0370 /* Doctor.swift */,
 			);
 			path = BuddyBuilder;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81858FCA1A84E5FE00BA5EEE /* GameScene.swift in Sources */,
+				FF65D6AA1A84E795000E0370 /* Doctor.swift in Sources */,
 				FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */,
 				FF65D68B1A84E1CA000E0370 /* AppDelegate.swift in Sources */,
 				FF65D6A81A84E59D000E0370 /* Extensions.swift in Sources */,
