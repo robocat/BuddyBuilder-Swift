@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		81858FC51A84E4E800BA5EEE /* loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81858FC31A84E4E800BA5EEE /* loop.mp3 */; };
 		81858FC61A84E4E800BA5EEE /* swing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81858FC41A84E4E800BA5EEE /* swing.mp3 */; };
+		81858FCA1A84E5FE00BA5EEE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81858FC91A84E5FE00BA5EEE /* GameScene.swift */; };
 		FF65D68B1A84E1CA000E0370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */; };
 		FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68C1A84E1CA000E0370 /* ViewController.swift */; };
 		FF65D68F1A84E1CA000E0370 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF65D68E1A84E1CA000E0370 /* Images.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		81858FC31A84E4E800BA5EEE /* loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop.mp3; sourceTree = "<group>"; };
 		81858FC41A84E4E800BA5EEE /* swing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swing.mp3; sourceTree = "<group>"; };
+		81858FC91A84E5FE00BA5EEE /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		FF65D6851A84E1CA000E0370 /* BuddyBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF65D6891A84E1CA000E0370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				FF65D68C1A84E1CA000E0370 /* ViewController.swift */,
 				FF65D6901A84E1CA000E0370 /* Main.storyboard */,
 				FF65D6881A84E1CA000E0370 /* Supporting Files */,
+				81858FC91A84E5FE00BA5EEE /* GameScene.swift */,
 			);
 			path = BuddyBuilder;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81858FCA1A84E5FE00BA5EEE /* GameScene.swift in Sources */,
 				FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */,
 				FF65D68B1A84E1CA000E0370 /* AppDelegate.swift in Sources */,
 			);

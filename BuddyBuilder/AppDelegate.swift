@@ -7,14 +7,16 @@
 //
 
 import Cocoa
+import SpriteKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+    @IBOutlet weak var window: NSWindow!
+    @IBOutlet weak var skView: SKView!
 
 	func applicationDidFinishLaunching(aNotification: NSNotification) {
-		// Insert code here to initialize your application
+        let scene = GameScene()
+        
 	}
 
 	func applicationWillTerminate(aNotification: NSNotification) {
