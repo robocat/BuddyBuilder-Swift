@@ -19,19 +19,32 @@ struct Layout {
     let obstacles: [ObstaclePosition]
 }
 
-let layout1 = Layout(obstacles: [
-    ObstaclePosition(type: .Sofa, position: CGPoint(x: 40, y: 320), angle: M_PI),
-    ObstaclePosition(type: .Table, position: CGPoint(x: 150, y: 325), angle: 0),
-    ObstaclePosition(type: .Plant, position: CGPoint(x: 200, y: 460), angle: 0),
-    ObstaclePosition(type: .Plant, position: CGPoint(x: 430, y: 40), angle: 0),
-    ObstaclePosition(type: .Desk, position: CGPoint(x: 430, y: 120), angle: 0),
-    ObstaclePosition(type: .Plant, position: CGPoint(x: 430, y: 250), angle: 0),
-    ObstaclePosition(type: .Stool, position: CGPoint(x: 440, y: 580), angle: 0),
-    ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 350, y: 630), angle: 0)
-])
-
 class Level: SKSpriteNode {
-//    var player: Player!
+
+    let layouts: [Layout] = [
+        Layout(obstacles: [
+            ObstaclePosition(type: .Sofa, position: CGPoint(x: 40, y: 320), angle: M_PI),
+            ObstaclePosition(type: .Table, position: CGPoint(x: 150, y: 325), angle: 0),
+            ObstaclePosition(type: .Plant, position: CGPoint(x: 200, y: 460), angle: 0),
+            ObstaclePosition(type: .Plant, position: CGPoint(x: 430, y: 40), angle: 0),
+            ObstaclePosition(type: .Desk, position: CGPoint(x: 430, y: 120), angle: 0),
+            ObstaclePosition(type: .Plant, position: CGPoint(x: 430, y: 250), angle: 0),
+            ObstaclePosition(type: .Stool, position: CGPoint(x: 440, y: 580), angle: 0),
+            ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 350, y: 630), angle: 0)
+        ]),
+        Layout(obstacles: [
+            ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 70, y: 170), angle: M_PI),
+            ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 70, y: 250), angle: M_PI),
+            ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 70, y: 530), angle: M_PI),
+            ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 70, y: 600), angle: M_PI),
+            ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 440, y: 170), angle: 0),
+            ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 440, y: 250), angle: 0),
+            ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 440, y: 530), angle: 0),
+            ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 440, y: 600), angle: 0),
+            ObstaclePosition(type: .Plant, position: CGPoint(x: 40, y: 780), angle: 0),
+            ObstaclePosition(type: .Stool, position: CGPoint(x: 90, y: 785), angle: 0)
+        ])
+    ]
     
     let maxNumberOfPatients = 10
     var patients: [Patient] = []
@@ -86,8 +99,17 @@ class Level: SKSpriteNode {
         physicsBody?.dynamic = false
     }
     
+    func randomLayout() -> Layout {
+        let range = Range<UInt32>(start: 0, end: UInt32(layouts.count - 1))
+        let rand = Int(Int.random(range))
+        
+        return layouts[rand]
+    }
+    
     func configureObstacles() {
-        for obstacle in layout1.obstacles {
+        let layout = randomLayout()
+        
+        for obstacle in layout.obstacles {
             let node = Obstacle(type: obstacle.type)
             let x = -(anchorPoint.x * size.width) + obstacle.position.x
             let y = -(anchorPoint.y * size.height) + obstacle.position.y

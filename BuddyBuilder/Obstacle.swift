@@ -17,7 +17,6 @@ enum ObstacleType: String {
     case Desk = "computer_table"
     case Sofa = "sofa"
     case Stool = "stool"
-    
 }
 
 class Obstacle: SKSpriteNode {

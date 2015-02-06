@@ -66,3 +66,9 @@ extension CGPoint {
 		return CGPoint(x: x, y: y)
 	}
 }
+
+extension Int {
+    static func random(range: Range<UInt32>) -> UInt32 {
+        return range.startIndex + arc4random_uniform(range.endIndex - range.startIndex + 1)
+    }
+}
