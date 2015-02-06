@@ -11,6 +11,8 @@
 		81858FC61A84E4E800BA5EEE /* swing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81858FC41A84E4E800BA5EEE /* swing.mp3 */; };
 		81858FCA1A84E5FE00BA5EEE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81858FC91A84E5FE00BA5EEE /* GameScene.swift */; };
 		81858FCC1A84E7B100BA5EEE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81858FCB1A84E7B100BA5EEE /* MainMenu.xib */; };
+		81858FCF1A84EB0900BA5EEE /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81858FCE1A84EB0900BA5EEE /* Level.swift */; };
+		81858FD11A84EBCB00BA5EEE /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81858FD01A84EBCB00BA5EEE /* Obstacle.swift */; };
 		FF65D68B1A84E1CA000E0370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */; };
 		FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68C1A84E1CA000E0370 /* ViewController.swift */; };
 		FF65D68F1A84E1CA000E0370 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF65D68E1A84E1CA000E0370 /* Images.xcassets */; };
@@ -34,6 +36,8 @@
 		81858FC41A84E4E800BA5EEE /* swing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swing.mp3; sourceTree = "<group>"; };
 		81858FC91A84E5FE00BA5EEE /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		81858FCB1A84E7B100BA5EEE /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		81858FCE1A84EB0900BA5EEE /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		81858FD01A84EBCB00BA5EEE /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
 		FF65D6851A84E1CA000E0370 /* BuddyBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF65D6891A84E1CA000E0370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,15 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
+		81858FCD1A84EAF900BA5EEE /* Game Objects */ = {
+			isa = PBXGroup;
+			children = (
+				81858FCE1A84EB0900BA5EEE /* Level.swift */,
+				81858FD01A84EBCB00BA5EEE /* Obstacle.swift */,
+			);
+			name = "Game Objects";
+			sourceTree = "<group>";
+		};
 		FF65D67C1A84E1CA000E0370 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 		FF65D6871A84E1CA000E0370 /* BuddyBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				81858FCD1A84EAF900BA5EEE /* Game Objects */,
 				FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */,
 				FF65D68C1A84E1CA000E0370 /* ViewController.swift */,
 				81858FC91A84E5FE00BA5EEE /* GameScene.swift */,
@@ -242,6 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81858FD11A84EBCB00BA5EEE /* Obstacle.swift in Sources */,
+				81858FCF1A84EB0900BA5EEE /* Level.swift in Sources */,
 				81858FCA1A84E5FE00BA5EEE /* GameScene.swift in Sources */,
 				FF65D6AA1A84E795000E0370 /* Doctor.swift in Sources */,
 				FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */,
