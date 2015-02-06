@@ -49,6 +49,7 @@ class Level: SKSpriteNode {
         self.zPosition = 1
         
         configureObstacles()
+		configurePlayer()
         configureWall()
     }
     
