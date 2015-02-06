@@ -23,14 +23,41 @@ class Person : SKSpriteNode {
 	
 	var walkingSpeed : CGFloat = 5
 	var direction : Direction = .Up
+	var walking : Bool = false
 	
 	func updateDirection() {
 		zRotation = (π * 2) / 8 * CGFloat(direction.rawValue)
 	}
+	
+	func update(timePassed : NSTimeInterval) {
+		if walking {
+			let speed = walkingSpeed * CGFloat(timePassed)
+			let move = CGPoint(x: -sin(zRotation) * speed, y: cos(zRotation) * speed)
+			position = CGPoint(x: position.x + move.x, y: position.y + move.y)
+		}
+	}
 }
 
 class Patient : Person {
+	enum Animation {
+		case Stand
+		case Walk
+		case Run
+	}
 	
+	let animations = Patient.loadAnimations()
+	
+	var animation : Animation = .Stand
+	
+	class func loadAnimations() -> [Animation: [SKTexture]] {
+		let sprites = SKTexture(imageNamed: "patient").cut(6, 2)
+		
+		return [
+			.Stand: [6].map { sprites[$0] },
+			.Walk: [6, 7, 8, 9, 10, 11].map { sprites[$0] },
+			.Run: [0, 1, 2, 3].map { sprites[$0] }
+		]
+	}
 }
 
 class Doctor : Person {
@@ -100,9 +127,10 @@ class Doctor : Person {
 		
 		if walking {
 			animation = .Walk
+			super.walking = true
 		} else {
 			animation = .Stand
-			walking = false
+			super.walking = false
 		}
 	}
 }
