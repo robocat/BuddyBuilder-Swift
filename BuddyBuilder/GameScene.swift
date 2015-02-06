@@ -17,6 +17,7 @@ enum GameState {
 
 class GameScene: SKScene {
     var state: GameState = .Playing
+    
     var level1: Level!
 	var time : NSTimeInterval = 0
 	
@@ -32,7 +33,9 @@ class GameScene: SKScene {
 		let timePassed = currentTime - time
 		time = currentTime
 		
-		level1.update(timePassed)
+		if state == .Playing {
+			level1.update(timePassed)
+		}
 	}
 	
 	override func keyDown(theEvent : NSEvent) {
