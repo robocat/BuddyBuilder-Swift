@@ -13,6 +13,7 @@
 		81858FCC1A84E7B100BA5EEE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81858FCB1A84E7B100BA5EEE /* MainMenu.xib */; };
 		81858FCF1A84EB0900BA5EEE /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81858FCE1A84EB0900BA5EEE /* Level.swift */; };
 		81858FD11A84EBCB00BA5EEE /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81858FD01A84EBCB00BA5EEE /* Obstacle.swift */; };
+		81C55E4C1A84F3B3006BEF24 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C55E4B1A84F3B3006BEF24 /* MusicPlayer.swift */; };
 		FF65D68B1A84E1CA000E0370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */; };
 		FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68C1A84E1CA000E0370 /* ViewController.swift */; };
 		FF65D68F1A84E1CA000E0370 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF65D68E1A84E1CA000E0370 /* Images.xcassets */; };
@@ -40,6 +41,7 @@
 		81858FCB1A84E7B100BA5EEE /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		81858FCE1A84EB0900BA5EEE /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		81858FD01A84EBCB00BA5EEE /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		81C55E4B1A84F3B3006BEF24 /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		FF65D6851A84E1CA000E0370 /* BuddyBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF65D6891A84E1CA000E0370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 			name = "Game Objects";
 			sourceTree = "<group>";
 		};
+		81C55E4A1A84F3A8006BEF24 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81C55E4B1A84F3B3006BEF24 /* MusicPlayer.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		FF65D67C1A84E1CA000E0370 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		FF65D6871A84E1CA000E0370 /* BuddyBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				81C55E4A1A84F3A8006BEF24 /* Helpers */,
 				81858FCD1A84EAF900BA5EEE /* Game Objects */,
 				FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */,
 				FF65D68C1A84E1CA000E0370 /* ViewController.swift */,
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C55E4C1A84F3B3006BEF24 /* MusicPlayer.swift in Sources */,
 				81858FD11A84EBCB00BA5EEE /* Obstacle.swift in Sources */,
 				81858FCF1A84EB0900BA5EEE /* Level.swift in Sources */,
 				FF65D6AE1A84EEFA000E0370 /* Person.swift in Sources */,

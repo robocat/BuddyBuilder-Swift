@@ -18,6 +18,12 @@ enum GameState {
 class GameScene: SKScene {
     var state: GameState = .Playing
     
+    lazy var musicPlayer: MusicPlayer = {
+        let url = NSBundle.mainBundle().URLForResource("loop", withExtension: "mp3")!
+        
+        return MusicPlayer(fileURL: url)
+    }()
+    
     var level1: Level!
     var lastUpdated: CFTimeInterval = 0
     
@@ -27,6 +33,8 @@ class GameScene: SKScene {
         level1 = Level(player: "")
         level1.position = CGPoint(x: 256, y: 411)
         addChild(level1)
+        
+        musicPlayer.play()
     }
     
     override func update(currentTime: NSTimeInterval) {
