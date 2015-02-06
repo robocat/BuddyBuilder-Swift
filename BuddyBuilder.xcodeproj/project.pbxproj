@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81858FC51A84E4E800BA5EEE /* loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81858FC31A84E4E800BA5EEE /* loop.mp3 */; };
+		81858FC61A84E4E800BA5EEE /* swing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81858FC41A84E4E800BA5EEE /* swing.mp3 */; };
 		FF65D68B1A84E1CA000E0370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */; };
 		FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68C1A84E1CA000E0370 /* ViewController.swift */; };
 		FF65D68F1A84E1CA000E0370 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF65D68E1A84E1CA000E0370 /* Images.xcassets */; };
@@ -26,11 +28,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81858FC31A84E4E800BA5EEE /* loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop.mp3; sourceTree = "<group>"; };
+		81858FC41A84E4E800BA5EEE /* swing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swing.mp3; sourceTree = "<group>"; };
 		FF65D6851A84E1CA000E0370 /* BuddyBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF65D6891A84E1CA000E0370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF65D68C1A84E1CA000E0370 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF65D68E1A84E1CA000E0370 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF65D68E1A84E1CA000E0370 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BuddyBuilder/Images.xcassets; sourceTree = "<group>"; };
 		FF65D6911A84E1CA000E0370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF65D6971A84E1CA000E0370 /* BuddyBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddyBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF65D69C1A84E1CA000E0370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,9 +60,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81858FC71A84E4EC00BA5EEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF65D68E1A84E1CA000E0370 /* Images.xcassets */,
+				81858FC81A84E4F200BA5EEE /* Sounds */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		81858FC81A84E4F200BA5EEE /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				81858FC31A84E4E800BA5EEE /* loop.mp3 */,
+				81858FC41A84E4E800BA5EEE /* swing.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		FF65D67C1A84E1CA000E0370 = {
 			isa = PBXGroup;
 			children = (
+				81858FC71A84E4EC00BA5EEE /* Resources */,
 				FF65D6871A84E1CA000E0370 /* BuddyBuilder */,
 				FF65D69A1A84E1CA000E0370 /* BuddyBuilderTests */,
 				FF65D6861A84E1CA000E0370 /* Products */,
@@ -79,7 +102,6 @@
 			children = (
 				FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */,
 				FF65D68C1A84E1CA000E0370 /* ViewController.swift */,
-				FF65D68E1A84E1CA000E0370 /* Images.xcassets */,
 				FF65D6901A84E1CA000E0370 /* Main.storyboard */,
 				FF65D6881A84E1CA000E0370 /* Supporting Files */,
 				FF65D6A71A84E59D000E0370 /* Extensions.swift */,
@@ -194,6 +216,8 @@
 			files = (
 				FF65D68F1A84E1CA000E0370 /* Images.xcassets in Resources */,
 				FF65D6921A84E1CA000E0370 /* Main.storyboard in Resources */,
+				81858FC51A84E4E800BA5EEE /* loop.mp3 in Resources */,
+				81858FC61A84E4E800BA5EEE /* swing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +425,7 @@
 				FF65D6A31A84E1CA000E0370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF65D6A41A84E1CA000E0370 /* Build configuration list for PBXNativeTarget "BuddyBuilderTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +434,7 @@
 				FF65D6A61A84E1CA000E0370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
