@@ -63,6 +63,7 @@
 		81858FC71A84E4EC00BA5EEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FF65D6901A84E1CA000E0370 /* Main.storyboard */,
 				FF65D68E1A84E1CA000E0370 /* Images.xcassets */,
 				81858FC81A84E4F200BA5EEE /* Sounds */,
 			);
@@ -83,6 +84,7 @@
 			children = (
 				81858FC71A84E4EC00BA5EEE /* Resources */,
 				FF65D6871A84E1CA000E0370 /* BuddyBuilder */,
+				FF65D6881A84E1CA000E0370 /* Supporting Files */,
 				FF65D69A1A84E1CA000E0370 /* BuddyBuilderTests */,
 				FF65D6861A84E1CA000E0370 /* Products */,
 			);
@@ -102,8 +104,6 @@
 			children = (
 				FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */,
 				FF65D68C1A84E1CA000E0370 /* ViewController.swift */,
-				FF65D6901A84E1CA000E0370 /* Main.storyboard */,
-				FF65D6881A84E1CA000E0370 /* Supporting Files */,
 				FF65D6A71A84E59D000E0370 /* Extensions.swift */,
 			);
 			path = BuddyBuilder;
@@ -115,6 +115,7 @@
 				FF65D6891A84E1CA000E0370 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = BuddyBuilder;
 			sourceTree = "<group>";
 		};
 		FF65D69A1A84E1CA000E0370 /* BuddyBuilderTests */ = {
@@ -266,6 +267,7 @@
 				FF65D6911A84E1CA000E0370 /* Base */,
 			);
 			name = Main.storyboard;
+			path = BuddyBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
