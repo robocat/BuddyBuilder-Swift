@@ -58,18 +58,11 @@ class Level: SKSpriteNode {
         physicsBody?.dynamic = false
     }
     
-<<<<<<< HEAD
     func configurePlayer() {
 		addChild(doctor)
 		doctor.position = CGPoint(x: 0, y: 0)
-		
-//        player.position = CGPointMake((frame.size.width - player.size.width) / 2, (frame.size.height - player.size.height) / 2)
-//        player.zPosition = 3
-//        addChild(player)
     }
     
-=======
->>>>>>> 51006eef0946bdc44012aa2ca58739e72819fd35
     override init(texture: SKTexture!, color: NSColor!, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
     }
@@ -105,31 +98,6 @@ class Level: SKSpriteNode {
         }
     }
     
-<<<<<<< HEAD
-    func spawnPatients() {
-        if patients.count <= maxNumberOfPatients {
-            if (Float(arc4random()) / Float(UINT32_MAX)) < 0.01 {
-                addPatient()
-            }
-        }
-    }
-    
-    func addPatient() {
-//        let patient = Patient(level: self)
-//        
-//        var x = CGFloat(randomRange(400, min: 80))
-//        var y = CGFloat(randomRange(700, min: 80))
-//        
-//        // Check if position collides with obstacle
-//        
-//        patient.position = CGPoint(x: x, y: y)
-//        patient.zRotation = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
-//        patient.moveRandom(0.6)
-//        
-//        addChild(patient)
-//        patients.append(patient)
-    }
-	
 	override func keyDown(theEvent : NSEvent) {
 		for child in children {
 			if let child = child as? SKNode {
@@ -145,12 +113,4 @@ class Level: SKSpriteNode {
 			}
 		}
 	}
-    
-    private func randomRange(max: Int, min: Int) -> Float {
-        return floorf(Float(arc4random()) / Float(UINT32_MAX) * (Float(max) - Float(min))) + Float(min)
-=======
-    func update(timePassed: NSTimeInterval) {
-        
->>>>>>> 51006eef0946bdc44012aa2ca58739e72819fd35
-    }
 }
