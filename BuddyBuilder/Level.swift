@@ -26,9 +26,9 @@ class Level: SKSpriteNode {
             ObstaclePosition(type: .Sofa, position: CGPoint(x: 40, y: 320), angle: M_PI),
             ObstaclePosition(type: .Table, position: CGPoint(x: 150, y: 325), angle: 0),
             ObstaclePosition(type: .Plant, position: CGPoint(x: 200, y: 460), angle: 0),
-            ObstaclePosition(type: .Plant, position: CGPoint(x: 430, y: 40), angle: 0),
-            ObstaclePosition(type: .Desk, position: CGPoint(x: 430, y: 120), angle: 0),
-            ObstaclePosition(type: .Plant, position: CGPoint(x: 430, y: 250), angle: 0),
+            ObstaclePosition(type: .Plant, position: CGPoint(x: 450, y: 40), angle: 0),
+            ObstaclePosition(type: .Desk, position: CGPoint(x: 450, y: 120), angle: 0),
+            ObstaclePosition(type: .Plant, position: CGPoint(x: 450, y: 250), angle: 0),
             ObstaclePosition(type: .Stool, position: CGPoint(x: 440, y: 580), angle: 0),
             ObstaclePosition(type: .BloodyTable, position: CGPoint(x: 350, y: 630), angle: 0)
         ]),
@@ -67,19 +67,13 @@ class Level: SKSpriteNode {
         
         configureObstacles()
 		configurePlayer()
-        configureWall()
-    }
-    
-    func configureWall() {
-        physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
-        physicsBody?.affectedByGravity = false
-        physicsBody?.dynamic = false
     }
     
     func configurePlayer() {
-		addChild(doctor)
 		doctor.position = CGPoint(x: 0, y: 0)
 		doctor.keepInside = bounds
+        
+        addChild(doctor)
     }
     
     override init(texture: SKTexture!, color: NSColor!, size: CGSize) {
@@ -97,12 +91,6 @@ class Level: SKSpriteNode {
 			}
 		}
 	}
-    
-    private func configurePhysics() {
-        self.physicsBody = SKPhysicsBody(texture: texture, size: size)
-        physicsBody?.affectedByGravity = false
-        physicsBody?.dynamic = false
-    }
     
     func randomLayout() -> Layout {
         let range = Range<UInt32>(start: 0, end: UInt32(layouts.count - 1))

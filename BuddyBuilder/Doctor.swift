@@ -9,10 +9,11 @@
 import Foundation
 import SpriteKit
 
-class Doctor : Person {
+class Doctor : Person {    
 	override init(texture: SKTexture!, color: NSColor!, size: CGSize) {
 		super.init(texture: texture, color: color, size: size)
 		playAnimation(.Stand)
+        configurePhysics()
 	}
 	
 	enum Animation {
@@ -46,6 +47,12 @@ class Doctor : Person {
 		let action = SKAction.animateWithTextures(sprites, timePerFrame: 0.1)
 		runAction(SKAction.repeatActionForever(action))
 	}
+    
+    func configurePhysics() {
+        physicsBody = SKPhysicsBody(texture: animations[.Stand]?[0], size: size)
+        physicsBody?.affectedByGravity = false
+        physicsBody?.dynamic = true
+    }
 	
 	var upPressed = false
 	var downPressed = false

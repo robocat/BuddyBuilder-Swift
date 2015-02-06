@@ -26,6 +26,10 @@ class Obstacle: SKSpriteNode {
         let size = texture.size()
         
         self.init(texture: texture, color: color, size: size)
+        
+        physicsBody = SKPhysicsBody(texture: texture, size: size)
+        physicsBody?.dynamic = false
+        physicsBody?.affectedByGravity = false
     }
     
     override init(texture: SKTexture!, color: NSColor!, size: CGSize) {
