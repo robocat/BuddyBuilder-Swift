@@ -24,6 +24,7 @@ class Person : SKSpriteNode {
 	var walkingSpeed : CGFloat = 200
 	var direction : Direction = .Up { didSet { updateDirection() } }
 	var walking : Bool = false
+	var keepInside : CGRect?
 	
 	func updateDirection() {
 		zRotation = (π * 2) / 8 * CGFloat(direction.rawValue)
@@ -34,6 +35,10 @@ class Person : SKSpriteNode {
 			let speed = walkingSpeed * CGFloat(timePassed)
 			let move = CGPoint(x: -sin(zRotation) * speed, y: cos(zRotation) * speed)
 			position = CGPoint(x: position.x + move.x, y: position.y + move.y)
+			
+			if let keepInside = keepInside {
+				position = position.clampToRect(keepInside.rectByInsetting(dx: size.width / 2, dy: size.height / 2))
+			}
 		}
 	}
 }

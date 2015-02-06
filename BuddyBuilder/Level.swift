@@ -49,6 +49,10 @@ class Level: SKSpriteNode {
     let maxNumberOfPatients = 10
     var patients: [Patient] = []
 	
+	var bounds : CGRect {
+		return CGRect(origin: CGPoint(x:-size.width / 2, y: -size.height / 2), size: size)
+	}
+	
 	let doctor = Doctor(texture: nil, color: nil, size: CGSize(width: 96, height: 96))
     
     convenience init(player: String) {
@@ -75,6 +79,7 @@ class Level: SKSpriteNode {
     func configurePlayer() {
 		addChild(doctor)
 		doctor.position = CGPoint(x: 0, y: 0)
+		doctor.keepInside = bounds
     }
     
     override init(texture: SKTexture!, color: NSColor!, size: CGSize) {
