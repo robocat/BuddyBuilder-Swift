@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF65D68B1A84E1CA000E0370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */; };
+		FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D68C1A84E1CA000E0370 /* ViewController.swift */; };
+		FF65D68F1A84E1CA000E0370 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF65D68E1A84E1CA000E0370 /* Images.xcassets */; };
+		FF65D6921A84E1CA000E0370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF65D6901A84E1CA000E0370 /* Main.storyboard */; };
+		FF65D69E1A84E1CA000E0370 /* BuddyBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D69D1A84E1CA000E0370 /* BuddyBuilderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF65D6981A84E1CA000E0370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF65D67D1A84E1CA000E0370 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF65D6841A84E1CA000E0370;
+			remoteInfo = BuddyBuilder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF65D6851A84E1CA000E0370 /* BuddyBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF65D6891A84E1CA000E0370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF65D68C1A84E1CA000E0370 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF65D68E1A84E1CA000E0370 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF65D6911A84E1CA000E0370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF65D6971A84E1CA000E0370 /* BuddyBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddyBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF65D69C1A84E1CA000E0370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF65D69D1A84E1CA000E0370 /* BuddyBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyBuilderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF65D6821A84E1CA000E0370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF65D6941A84E1CA000E0370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF65D67C1A84E1CA000E0370 = {
+			isa = PBXGroup;
+			children = (
+				FF65D6871A84E1CA000E0370 /* BuddyBuilder */,
+				FF65D69A1A84E1CA000E0370 /* BuddyBuilderTests */,
+				FF65D6861A84E1CA000E0370 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF65D6861A84E1CA000E0370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF65D6851A84E1CA000E0370 /* BuddyBuilder.app */,
+				FF65D6971A84E1CA000E0370 /* BuddyBuilderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF65D6871A84E1CA000E0370 /* BuddyBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				FF65D68A1A84E1CA000E0370 /* AppDelegate.swift */,
+				FF65D68C1A84E1CA000E0370 /* ViewController.swift */,
+				FF65D68E1A84E1CA000E0370 /* Images.xcassets */,
+				FF65D6901A84E1CA000E0370 /* Main.storyboard */,
+				FF65D6881A84E1CA000E0370 /* Supporting Files */,
+			);
+			path = BuddyBuilder;
+			sourceTree = "<group>";
+		};
+		FF65D6881A84E1CA000E0370 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF65D6891A84E1CA000E0370 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF65D69A1A84E1CA000E0370 /* BuddyBuilderTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF65D69D1A84E1CA000E0370 /* BuddyBuilderTests.swift */,
+				FF65D69B1A84E1CA000E0370 /* Supporting Files */,
+			);
+			path = BuddyBuilderTests;
+			sourceTree = "<group>";
+		};
+		FF65D69B1A84E1CA000E0370 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF65D69C1A84E1CA000E0370 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF65D6841A84E1CA000E0370 /* BuddyBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF65D6A11A84E1CA000E0370 /* Build configuration list for PBXNativeTarget "BuddyBuilder" */;
+			buildPhases = (
+				FF65D6811A84E1CA000E0370 /* Sources */,
+				FF65D6821A84E1CA000E0370 /* Frameworks */,
+				FF65D6831A84E1CA000E0370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuddyBuilder;
+			productName = BuddyBuilder;
+			productReference = FF65D6851A84E1CA000E0370 /* BuddyBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF65D6961A84E1CA000E0370 /* BuddyBuilderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF65D6A41A84E1CA000E0370 /* Build configuration list for PBXNativeTarget "BuddyBuilderTests" */;
+			buildPhases = (
+				FF65D6931A84E1CA000E0370 /* Sources */,
+				FF65D6941A84E1CA000E0370 /* Frameworks */,
+				FF65D6951A84E1CA000E0370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF65D6991A84E1CA000E0370 /* PBXTargetDependency */,
+			);
+			name = BuddyBuilderTests;
+			productName = BuddyBuilderTests;
+			productReference = FF65D6971A84E1CA000E0370 /* BuddyBuilderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF65D67D1A84E1CA000E0370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Robocat;
+				TargetAttributes = {
+					FF65D6841A84E1CA000E0370 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FF65D6961A84E1CA000E0370 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FF65D6841A84E1CA000E0370;
+					};
+				};
+			};
+			buildConfigurationList = FF65D6801A84E1CA000E0370 /* Build configuration list for PBXProject "BuddyBuilder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF65D67C1A84E1CA000E0370;
+			productRefGroup = FF65D6861A84E1CA000E0370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF65D6841A84E1CA000E0370 /* BuddyBuilder */,
+				FF65D6961A84E1CA000E0370 /* BuddyBuilderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF65D6831A84E1CA000E0370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF65D68F1A84E1CA000E0370 /* Images.xcassets in Resources */,
+				FF65D6921A84E1CA000E0370 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF65D6951A84E1CA000E0370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF65D6811A84E1CA000E0370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */,
+				FF65D68B1A84E1CA000E0370 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF65D6931A84E1CA000E0370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF65D69E1A84E1CA000E0370 /* BuddyBuilderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF65D6991A84E1CA000E0370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF65D6841A84E1CA000E0370 /* BuddyBuilder */;
+			targetProxy = FF65D6981A84E1CA000E0370 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF65D6901A84E1CA000E0370 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF65D6911A84E1CA000E0370 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF65D69F1A84E1CA000E0370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF65D6A01A84E1CA000E0370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FF65D6A21A84E1CA000E0370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BuddyBuilder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF65D6A31A84E1CA000E0370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BuddyBuilder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF65D6A51A84E1CA000E0370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BuddyBuilderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuddyBuilder.app/Contents/MacOS/BuddyBuilder";
+			};
+			name = Debug;
+		};
+		FF65D6A61A84E1CA000E0370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BuddyBuilderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuddyBuilder.app/Contents/MacOS/BuddyBuilder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF65D6801A84E1CA000E0370 /* Build configuration list for PBXProject "BuddyBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF65D69F1A84E1CA000E0370 /* Debug */,
+				FF65D6A01A84E1CA000E0370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF65D6A11A84E1CA000E0370 /* Build configuration list for PBXNativeTarget "BuddyBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF65D6A21A84E1CA000E0370 /* Debug */,
+				FF65D6A31A84E1CA000E0370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF65D6A41A84E1CA000E0370 /* Build configuration list for PBXNativeTarget "BuddyBuilderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF65D6A51A84E1CA000E0370 /* Debug */,
+				FF65D6A61A84E1CA000E0370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF65D67D1A84E1CA000E0370 /* Project object */;
+}
