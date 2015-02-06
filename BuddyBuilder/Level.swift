@@ -35,6 +35,8 @@ class Level: SKSpriteNode {
     
     let maxNumberOfPatients = 10
     var patients: [Patient] = []
+	
+	let doctor = Doctor(texture: nil, color: nil, size: CGSize(width: 96, height: 96))
     
     convenience init(player: String) {
         
@@ -59,6 +61,9 @@ class Level: SKSpriteNode {
     }
     
     func configurePlayer() {
+		addChild(doctor)
+		doctor.position = CGPoint(x: 0, y: 0)
+		
 //        player.position = CGPointMake((frame.size.width - player.size.width) / 2, (frame.size.height - player.size.height) / 2)
 //        player.zPosition = 3
 //        addChild(player)
@@ -71,6 +76,14 @@ class Level: SKSpriteNode {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+	
+	func update(timePassed : NSTimeInterval) {
+		for child in children {
+			if let child = child as? Person {
+				child.update(timePassed)
+			}
+		}
+	}
     
     private func configurePhysics() {
         self.physicsBody = SKPhysicsBody(texture: texture, size: size)
@@ -114,6 +127,22 @@ class Level: SKSpriteNode {
 //        addChild(patient)
 //        patients.append(patient)
     }
+	
+	override func keyDown(theEvent : NSEvent) {
+		for child in children {
+			if let child = child as? SKNode {
+				child.keyDown(theEvent)
+			}
+		}
+	}
+	
+	override func keyUp(theEvent : NSEvent) {
+		for child in children {
+			if let child = child as? SKNode {
+				child.keyUp(theEvent)
+			}
+		}
+	}
     
     private func randomRange(max: Int, min: Int) -> Float {
         return floorf(Float(arc4random()) / Float(UINT32_MAX) * (Float(max) - Float(min))) + Float(min)

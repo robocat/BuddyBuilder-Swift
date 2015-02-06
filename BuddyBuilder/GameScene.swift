@@ -18,6 +18,7 @@ enum GameState {
 class GameScene: SKScene {
     var state: GameState = .Playing
     var level1: Level!
+	var time : NSTimeInterval = 0
 	
     override func didMoveToView(view: SKView) {
         self.size = CGSize(width: 1024, height: 822)
@@ -26,4 +27,19 @@ class GameScene: SKScene {
         level1.position = CGPoint(x: 256, y: 411)
         addChild(level1)
     }
+	
+	override func update(currentTime: NSTimeInterval) {
+		let timePassed = currentTime - time
+		time = currentTime
+		
+		level1.update(timePassed)
+	}
+	
+	override func keyDown(theEvent : NSEvent) {
+		level1.keyDown(theEvent)
+	}
+	
+	override func keyUp(theEvent : NSEvent) {
+		level1.keyUp(theEvent)
+	}
 }

@@ -21,8 +21,8 @@ class Person : SKSpriteNode {
 		case UpRight = 7
 	}
 	
-	var walkingSpeed : CGFloat = 5
-	var direction : Direction = .Up
+	var walkingSpeed : CGFloat = 200
+	var direction : Direction = .Up { didSet { updateDirection() } }
 	var walking : Bool = false
 	
 	func updateDirection() {

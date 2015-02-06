@@ -29,5 +29,17 @@ class Patient : Person {
 			.Run: [0, 1, 2, 3].map { sprites[$0] }
 		]
 	}
+	
+	func playAnimation(animation : Animation) {
+		let sprites = animations[animation]!
+		let action = SKAction.animateWithTextures(sprites, timePerFrame: 0.1)
+		runAction(SKAction.repeatActionForever(action))
+	}
+	
+	override var walking : Bool {
+		didSet {
+			playAnimation(walking ? .Walk : .Stand)
+		}
+	}
 }
 
