@@ -25,8 +25,8 @@ class GameScene: SKScene {
     }()
     
     var level1: Level!
-    var lastUpdated: CFTimeInterval = 0
-    
+	var time : NSTimeInterval = 0
+	
     override func didMoveToView(view: SKView) {
         self.size = CGSize(width: 1024, height: 822)
         
@@ -36,13 +36,21 @@ class GameScene: SKScene {
         
         musicPlayer.play()
     }
-    
-    override func update(currentTime: NSTimeInterval) {
-        let timeSinceLast = currentTime - lastUpdated
-        lastUpdated = currentTime
-        
-        if state == .Playing {
-            level1?.update(timeSinceLast)
-        }
-    }
+	
+	override func update(currentTime: NSTimeInterval) {
+		let timePassed = currentTime - time
+		time = currentTime
+		
+		if state == .Playing {
+			level1.update(timePassed)
+		}
+	}
+	
+	override func keyDown(theEvent : NSEvent) {
+		level1.keyDown(theEvent)
+	}
+	
+	override func keyUp(theEvent : NSEvent) {
+		level1.keyUp(theEvent)
+	}
 }

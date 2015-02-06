@@ -10,6 +10,11 @@ import Foundation
 import SpriteKit
 
 class Doctor : Person {
+	override init(texture: SKTexture!, color: NSColor!, size: CGSize) {
+		super.init(texture: texture, color: color, size: size)
+		playAnimation(.Stand)
+	}
+	
 	enum Animation {
 		case Stand
 		case Walk
@@ -18,7 +23,13 @@ class Doctor : Person {
 	
 	var animations = Doctor.loadAnimations()
 	
-	var animation : Animation = .Stand
+	var animation : Animation = .Stand {
+		didSet {
+			if oldValue != animation {
+				playAnimation(animation)
+			}
+		}
+	}
 	
 	class func loadAnimations() -> [Animation: [SKTexture]] {
 		let sprites = SKTexture(imageNamed: "doctor").cut(8, 2)
@@ -28,6 +39,12 @@ class Doctor : Person {
 			.Walk: [8, 9, 10, 11, 12, 13, 14, 15].map { sprites[$0] },
 			.Slash: [0, 1, 2, 3, 4, 5, 6, 7].map { sprites[$0] }
 		]
+	}
+	
+	func playAnimation(animation : Animation) {
+		let sprites = animations[animation]!
+		let action = SKAction.animateWithTextures(sprites, timePerFrame: 0.1)
+		runAction(SKAction.repeatActionForever(action))
 	}
 	
 	var upPressed = false
@@ -76,10 +93,10 @@ class Doctor : Person {
 		
 		if walking {
 			animation = .Walk
-			super.walking = true
+			self.walking = true
 		} else {
 			animation = .Stand
-			super.walking = false
+			self.walking = false
 		}
 	}
 }
