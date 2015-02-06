@@ -16,7 +16,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	func applicationDidFinishLaunching(aNotification: NSNotification) {
         let scene = GameScene()
+        scene.scaleMode = .AspectFit
         
+        self.skView?.presentScene(scene)
+        self.skView?.ignoresSiblingOrder = true
+        self.skView?.showsFPS = true
+        self.skView?.showsNodeCount = true
 	}
 
 	func applicationWillTerminate(aNotification: NSNotification) {
