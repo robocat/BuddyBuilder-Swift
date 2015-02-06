@@ -19,6 +19,8 @@
 		FF65D69E1A84E1CA000E0370 /* BuddyBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D69D1A84E1CA000E0370 /* BuddyBuilderTests.swift */; };
 		FF65D6A81A84E59D000E0370 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D6A71A84E59D000E0370 /* Extensions.swift */; };
 		FF65D6AA1A84E795000E0370 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D6A91A84E795000E0370 /* Doctor.swift */; };
+		FF65D6AC1A84EEF6000E0370 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D6AB1A84EEF6000E0370 /* Patient.swift */; };
+		FF65D6AE1A84EEFA000E0370 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65D6AD1A84EEFA000E0370 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		FF65D69D1A84E1CA000E0370 /* BuddyBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyBuilderTests.swift; sourceTree = "<group>"; };
 		FF65D6A71A84E59D000E0370 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FF65D6A91A84E795000E0370 /* Doctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		FF65D6AB1A84EEF6000E0370 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		FF65D6AD1A84EEFA000E0370 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,9 @@
 			children = (
 				81858FCE1A84EB0900BA5EEE /* Level.swift */,
 				81858FD01A84EBCB00BA5EEE /* Obstacle.swift */,
+				FF65D6A91A84E795000E0370 /* Doctor.swift */,
+				FF65D6AB1A84EEF6000E0370 /* Patient.swift */,
+				FF65D6AD1A84EEFA000E0370 /* Person.swift */,
 			);
 			name = "Game Objects";
 			sourceTree = "<group>";
@@ -124,7 +131,6 @@
 				FF65D68C1A84E1CA000E0370 /* ViewController.swift */,
 				81858FC91A84E5FE00BA5EEE /* GameScene.swift */,
 				FF65D6A71A84E59D000E0370 /* Extensions.swift */,
-				FF65D6A91A84E795000E0370 /* Doctor.swift */,
 			);
 			path = BuddyBuilder;
 			sourceTree = "<group>";
@@ -258,9 +264,11 @@
 			files = (
 				81858FD11A84EBCB00BA5EEE /* Obstacle.swift in Sources */,
 				81858FCF1A84EB0900BA5EEE /* Level.swift in Sources */,
+				FF65D6AE1A84EEFA000E0370 /* Person.swift in Sources */,
 				81858FCA1A84E5FE00BA5EEE /* GameScene.swift in Sources */,
 				FF65D6AA1A84E795000E0370 /* Doctor.swift in Sources */,
 				FF65D68D1A84E1CA000E0370 /* ViewController.swift in Sources */,
+				FF65D6AC1A84EEF6000E0370 /* Patient.swift in Sources */,
 				FF65D68B1A84E1CA000E0370 /* AppDelegate.swift in Sources */,
 				FF65D6A81A84E59D000E0370 /* Extensions.swift in Sources */,
 			);
